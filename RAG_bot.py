@@ -11,7 +11,7 @@ def install_package(package):
 # Install the required packages
 #install_package("langchain")
 #install_package("chromadb")
-#install_package("langchain-huggingface")
+#install_package("langchain-huggingface
 #install_package("streamlit")
 #install_package("langchain-openai")
 

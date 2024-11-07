@@ -45,9 +45,6 @@ import subprocess
 import sys
 import streamlit as st
 
-#os.environ["GVO78KFjnCgLq4jv7jvRd6SnuDTXbUOr03l4rcUo"] = getpass.getpass()
-#os.environ["LANGCHAIN_API_KEY"] = "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"
-#os.environ["LANGSMITH_TRACING"] = "true"
 
 # Directly pass the API key to the ChatCohere class
 load_dotenv()

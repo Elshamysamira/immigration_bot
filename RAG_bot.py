@@ -53,9 +53,8 @@ import streamlit as st
 load_dotenv()
 cohere_api_key = os.getenv("COHERE_API_KEY")
 
-#cohere_api_key = "GVO78KFjnCgLq4jv7jvRd6SnuDTXbUOr03l4rcUo"  # Replace with your actual API key
 llm = ChatCohere(model="command-r", cohere_api_key=cohere_api_key)
-#langchain_api_key ="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"
+
 
 # SPECIFY THE FOLDER PATH WHERE ALL YOUR .TXT FILES ARE LOCATED!!
 folder_path = "documents"  # Replace with your folder path

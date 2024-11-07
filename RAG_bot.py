@@ -31,6 +31,7 @@ from langchain_huggingface import HuggingFaceEmbeddings
 from langchain_cohere import ChatCohere
 from langchain.document_loaders import TextLoader #for .txt files
 from pathlib import Path #to load more than one document
+from dotenv import load_dotenv
 #%pip install chromadb
 #%pip install -U langchain-huggingface
 #pip install streamlit
@@ -49,7 +50,10 @@ import streamlit as st
 #os.environ["LANGSMITH_TRACING"] = "true"
 
 # Directly pass the API key to the ChatCohere class
-cohere_api_key = "GVO78KFjnCgLq4jv7jvRd6SnuDTXbUOr03l4rcUo"  # Replace with your actual API key
+load_dotenv()
+cohere_api_key = os.getenv("COHERE_API_KEY")
+
+#cohere_api_key = "GVO78KFjnCgLq4jv7jvRd6SnuDTXbUOr03l4rcUo"  # Replace with your actual API key
 llm = ChatCohere(model="command-r", cohere_api_key=cohere_api_key)
 #langchain_api_key ="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"
 

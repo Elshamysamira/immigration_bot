@@ -7,7 +7,6 @@ altair==5.4.1
 aniso8601==9.0.1
 annotated-types==0.7.0
 anyio==4.6.0
-appnope @ file:///home/conda/feedstock_root/build_artifacts/appnope_1707233003401/work
 asgiref==3.8.1
 asttokens @ file:///home/conda/feedstock_root/build_artifacts/asttokens_1698341106958/work
 attrs==23.2.0

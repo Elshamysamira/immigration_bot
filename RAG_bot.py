@@ -20,6 +20,7 @@ def install_package(package):
 #print("All packages installed, continuing with the script...")
 
 from langchain import hub
+#from pydantic_settings import BaseSettings
 #from langchain_community.document_loaders import WebBaseLoader
 from langchain_community.vectorstores import Chroma
 from langchain_core.output_parsers import StrOutputParser
